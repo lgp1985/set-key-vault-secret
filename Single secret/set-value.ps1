@@ -1,0 +1,1 @@
+New-AzResourceGroupDeployment -ResourceGroupName "DefaultResourceGroup-EUS2" -TemplateFile .\kv-secret.bicep -keyVaultName "kv-lgp-test01" -secretName "secret01" -secretValue $(ConvertTo-SecureString -String "secretValue01" -AsPlainText -Force)
